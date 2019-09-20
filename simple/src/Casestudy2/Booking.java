@@ -1,9 +1,7 @@
 package Casestudy2;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 
 public class Booking {
 	public static int book[]= new int[25];
@@ -49,10 +47,7 @@ default:
 	break;
 	
 }
-
 }while(choice!=3);
-
-
 
 }
 
@@ -70,8 +65,7 @@ private static void status() throws NumberFormatException, IOException
 	else
 	{
 		System.out.println("Room number "+k+ " not is booked");
-	}
-	
+	}	
 }
 
 
@@ -142,8 +136,7 @@ public static void book() throws IOException
 	{
 		la=0;
 		lae= "Without";
-	}
-	
+	}	
 	total = a+co+ca+wi+la;
 	
 	System.out.println("The total charge is Rs " +total);
@@ -163,14 +156,6 @@ public static void book() throws IOException
 	else
 	{
 		System.out.println("Your booking has been cancelled\n\n");
-	}
-	
-	
-	
-	
+	}	
 }
-
-
-
-
 }
