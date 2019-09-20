@@ -15,17 +15,15 @@ public class Contract {
 		{
 			bid[i] = sc.nextInt();
 		}
-		for (int i=0; i< appl-1; i++)
+		max= bid[0];
+		for (int i=0; i< appl; i++)
 		{
-			if (bid[i]>bid[i+1])
+			if ( max < bid[i])
 			{
-				max=bid[i];
-			}
-			else
-			{
-				max=bid[i+1];
-			}
+				max=bid[i];			
 				
+			}
+			
 		}
 		System.out.println("The winning bid is " +max +" crores");
 		
