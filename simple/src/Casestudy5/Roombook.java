@@ -43,7 +43,7 @@ System.out.println("Enter proof type");
 prooftype=br.readLine();
 System.out.println("Enter proof id");
 proofID=br.readLine();
-id[j]=1;
+
 
 System.out.println("Thank you for registering. Your id is " +j+ "\n");
 
@@ -154,6 +154,7 @@ private static void book() throws IOException
 		cname[j]= name;
 		id[j]=1;
 		d++;
+		
 	}
 	else
 	{
@@ -177,12 +178,12 @@ private static void ViewCustomer() throws IOException
 		if ((date[k].equals(start)))
 		{
 			s=k;
-			System.out.println(+s);
+			System.out.println(s);
 		}
 		if ((date[k].equals(end)))
 		{
 			e=k;
-			System.out.println(+e);
+			System.out.println(e);
 		}
 	}
 	
