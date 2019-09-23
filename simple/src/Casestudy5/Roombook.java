@@ -173,7 +173,8 @@ private static void ViewCustomer() throws IOException
 	start= br.readLine();
 	System.out.println("Enter the End date");
 	end= br.readLine();
-	for (int k=1; k<50; k++)
+	
+	/*for (int k=1; k<50; k++)
 	{
 		if ((date[k].equals(start)))
 		{
@@ -186,7 +187,7 @@ private static void ViewCustomer() throws IOException
 			System.out.println(e);
 		}
 	}
-	
+	*/
 	
 	
 	System.out.println("\nCustomer ID                   Customer Name");
