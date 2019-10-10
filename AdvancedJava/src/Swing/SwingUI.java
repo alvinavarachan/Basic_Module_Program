@@ -4,6 +4,9 @@ import javax.swing.JButton;
 import javax.swing.JTextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import java.awt.Color;
@@ -52,7 +55,27 @@ public  static void main (String []args)
 	JButton b= new JButton ("SUBMIT");
 	b.setBounds(150,340,80,30);
 	f.add(b);
-	
+	tfn.addKeyListener(new KeyListener() {
+		
+		@Override
+		public void keyTyped(KeyEvent e) {
+			
+		}
+		
+		@Override
+		public void keyReleased(KeyEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public void keyPressed(KeyEvent evt) {
+			int key = evt.getKeyCode();
+	        if (key == KeyEvent.VK_ENTER)
+	        	tln.requestFocus(true);
+	          
+		}
+	});
 	b.addActionListener(new ActionListener() {
 		
 		@Override
@@ -101,6 +124,7 @@ public  static void main (String []args)
 			f.add(oema);
 			String nema= tema.getText();
 			oema.setText("Email-ID : "+nema);
+			tln.requestFocus(true);
 						
 		}
 	});
