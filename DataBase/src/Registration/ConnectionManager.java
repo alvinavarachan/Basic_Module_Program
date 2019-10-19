@@ -56,9 +56,7 @@ public class ConnectionManager {
    
 
    
-    
-    
-    
+
     
     JLabel head,dia,user,pass;
     
